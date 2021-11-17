@@ -1,0 +1,182 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>IrisData package &#8212; IrisData 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/bizstyle.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="IrisData" href="modules.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="IrisData"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">IrisData 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">IrisData</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">IrisData package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="irisdata-package">
+<h1>IrisData package<a class="headerlink" href="#irisdata-package" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-IrisData.PyQt">
+<span id="irisdata-pyqt-module"></span><h2>IrisData.PyQt module<a class="headerlink" href="#module-IrisData.PyQt" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="IrisData.PyQt.Window">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">IrisData.PyQt.</span></span><span class="sig-name descname"><span class="pre">Window</span></span><a class="headerlink" href="#IrisData.PyQt.Window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QWidget</span></code></p>
+<dl class="simple">
+<dt>Atributos:</dt><dd><dl class="simple">
+<dt>data:</dt><dd><p>Diccionario con la información de la flor.</p>
+</dd>
+</dl>
+</dd>
+<dt>Metodos:</dt><dd><dl class="simple">
+<dt>deepLeerning:</dt><dd><p>Abre y procesa el .csv necesario para entrenar a la aplicación.</p>
+</dd>
+<dt>predict:</dt><dd><p>Actualiza los datos en la variable data con la nueva información de la interfaz y la utiliza para predecir el tipo de flor que es.</p>
+</dd>
+<dt>startWidgets:</dt><dd><p>Inicializa los componentes UI de los Labels y los Entrys.</p>
+</dd>
+<dt>startLabels:</dt><dd><p>Crea los Labels para mostrar al lado de cada Entry y la salida con el resultado de predict.</p>
+</dd>
+<dt>startEntrys:</dt><dd><p>Crea los Entrys para la entrada de datos. Cada Entry se enlazaría con el metodo predict. Cada vez que cambia el valor, se lanzaría dicho método.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="IrisData.PyQt.Window.deepLeerning">
+<span class="sig-name descname"><span class="pre">deepLeerning</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#IrisData.PyQt.Window.deepLeerning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Abre y procesa el .csv necesario para entrenar a la aplicación.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IrisData.PyQt.Window.predict">
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#IrisData.PyQt.Window.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Actualiza los datos en la variable data con la nueva información de la interfaz y la utiliza para predecir el tipo de flor que es.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IrisData.PyQt.Window.startEntrys">
+<span class="sig-name descname"><span class="pre">startEntrys</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#IrisData.PyQt.Window.startEntrys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Crea los Entrys para la entrada de datos. Cada Entry se enlazaría con el metodo predict. Cada vez que cambia el valor, se lanzaría dicho método.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IrisData.PyQt.Window.startLabels">
+<span class="sig-name descname"><span class="pre">startLabels</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#IrisData.PyQt.Window.startLabels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Crea los Labels para mostrar al lado de cada Entry y la salida con el resultado de predict.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IrisData.PyQt.Window.startWidgets">
+<span class="sig-name descname"><span class="pre">startWidgets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#IrisData.PyQt.Window.startWidgets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inicializa los componentes UI de los Labels y los Entrys.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-IrisData">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-IrisData" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">IrisData package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-IrisData.PyQt">IrisData.PyQt module</a></li>
+<li><a class="reference internal" href="#module-IrisData">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="modules.html"
+                        title="previous chapter">IrisData</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/IrisData.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="IrisData"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">IrisData 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >IrisData</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">IrisData package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Sergio Arcila.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>
